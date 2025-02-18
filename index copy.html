@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenna Santos - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #D4A5A5;  /* Muted Dusty Rose */
+            --secondary: #C3DAC3;  /* Soft Sage Green */
+            --accent: #9A8FBF;  /* Muted Lavender */
+            --text: #4A4A4A;  /* Dark Gray */
+            --background: #F5F5F5;  /* Light Off-White */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.05em;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+        }
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        p {
+            font-size: 1.1rem;
+            color: var(--text);
+            font-weight: 500;  /* Boldened body text */
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .contact-info div {
+            background: var(--secondary);
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 200px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .contact-info div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: var(--primary);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jenna Santos</h1>
+        <p>Finance Major & Marketing Minor at Quinnipiac University</p>
+    </header>
+    <div class="container">
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I am a passionate and driven student at Quinnipiac University, pursuing a degree in Finance with a minor in Marketing. As the former Online Media Director for Kappa Alpha Theta Fraternity, I have extensive experience in social media content creation, curation, and strategy for Instagram and TikTok. I am eager to leverage my skills in finance, marketing, and digital media to contribute to innovative and impactful projects.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2>Experience</h2>
+            <h3>Online Media Director - Kappa Alpha Theta Fraternity</h3>
+            <p><em>December 2023 - December 2024</em></p>
+            <ul>
+                <li>Managed and curated content for Instagram and TikTok, increasing engagement.</li>
+                <li>Developed and executed social media strategies to align with the organization's branding and goals.</li>
+                <li>Collaborated with team members to create visually appealing and impactful content.</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">Instagram Campaign 1</div>
+                <div class="portfolio-item">Instagram Campaign 2</div>
+                <div class="portfolio-item">TikTok Video Series</div>
+                <div class="portfolio-item">Social Media Analytics Report</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-phone icon"></i>
+                    <strong>Phone</strong>
+                    <p><a href="tel:203-814-8715">203-814-8715</a></p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope icon"></i>
+                    <strong>School Email</strong>
+                    <p><a href="mailto:jenna.santos@quinnipiac.edu">jenna.santos@quinnipiac.edu</a></p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope icon"></i>
+                    <strong>Personal Email</strong>
+                    <p><a href="mailto:jennasantos8777@gmail.com">jennasantos8777@gmail.com</a></p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <strong>Address</strong>
+                    <p>275 Mt Carmel Ave, Hamden, CT 06518</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LinkedIn Link -->
+        <section class="section">
+            <h2>Connect With Me</h2>
+            <p>Let's connect on LinkedIn! <a href="https://www.linkedin.com/in/jenna-anne-santos-" target="_blank"><i class="fab fa-linkedin icon"></i>View my LinkedIn profile</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Jenna Santos. All rights reserved.</p>
+    </footer>
+</body>
+</html>
